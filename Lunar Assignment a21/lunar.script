@@ -1,0 +1,576 @@
+Create Spacecraft satTOI;
+satTOI.DateFormat = TAIModJulian;
+satTOI.Epoch = '21545';
+satTOI.CoordinateSystem = EarthMJ2000Eq;
+satTOI.DisplayStateType = Cartesian;
+satTOI.X = 7100;
+satTOI.Y = 0;
+satTOI.Z = 1300;
+satTOI.VX = 0;
+satTOI.VY = 7.35;
+satTOI.VZ = 1;
+satTOI.DryMass = 850;
+satTOI.Cd = 2.2;
+satTOI.Cr = 1.8;
+satTOI.DragArea = 15;
+satTOI.SRPArea = 1;
+satTOI.SPADDragScaleFactor = 1;
+satTOI.SPADSRPScaleFactor = 1;
+satTOI.AtmosDensityScaleFactor = 1;
+satTOI.ExtendedMassPropertiesModel = 'None';
+satTOI.NAIFId = -10007001;
+satTOI.NAIFIdReferenceFrame = -9007001;
+satTOI.OrbitColor = Red;
+satTOI.TargetColor = Teal;
+satTOI.OrbitErrorCovariance = [ 1e+70 0 0 0 0 0 ; 0 1e+70 0 0 0 0 ; 0 0 1e+70 0 0 0 ; 0 0 0 1e+70 0 0 ; 0 0 0 0 1e+70 0 ; 0 0 0 0 0 1e+70 ];
+satTOI.CdSigma = 1e+70;
+satTOI.CrSigma = 1e+70;
+satTOI.Id = 'SatId';
+satTOI.Attitude = CoordinateSystemFixed;
+satTOI.SPADSRPInterpolationMethod = Bilinear;
+satTOI.SPADSRPScaleFactorSigma = 1e+70;
+satTOI.SPADDragInterpolationMethod = Bilinear;
+satTOI.SPADDragScaleFactorSigma = 1e+70;
+satTOI.AtmosDensityScaleFactorSigma = 1e+70;
+satTOI.ModelFile = 'aura.3ds';
+satTOI.ModelOffsetX = 0;
+satTOI.ModelOffsetY = 0;
+satTOI.ModelOffsetZ = 0;
+satTOI.ModelRotationX = 0;
+satTOI.ModelRotationY = 0;
+satTOI.ModelRotationZ = 0;
+satTOI.ModelScale = 1;
+satTOI.AttitudeDisplayStateType = 'Quaternion';
+satTOI.AttitudeRateDisplayStateType = 'AngularVelocity';
+satTOI.AttitudeCoordinateSystem = EarthMJ2000Eq;
+satTOI.EulerAngleSequence = '321';
+
+%  Flyby control point
+Create Spacecraft satFlyBy_Forward;
+satFlyBy_Forward.DateFormat = TAIModJulian;
+satFlyBy_Forward.Epoch = '21545';
+satFlyBy_Forward.CoordinateSystem = MoonMJ2000Eq;
+satFlyBy_Forward.DisplayStateType = Cartesian;
+satFlyBy_Forward.X = 298687.676146519;
+satFlyBy_Forward.Y = 266738.2657072406;
+satFlyBy_Forward.Z = 77412.17892771779;
+satFlyBy_Forward.VX = -0.6435900196947146;
+satFlyBy_Forward.VY = 8.016034988895781;
+satFlyBy_Forward.VZ = 1.301310784907214;
+satFlyBy_Forward.DryMass = 850;
+satFlyBy_Forward.Cd = 2.2;
+satFlyBy_Forward.Cr = 1.8;
+satFlyBy_Forward.DragArea = 15;
+satFlyBy_Forward.SRPArea = 1;
+satFlyBy_Forward.SPADDragScaleFactor = 1;
+satFlyBy_Forward.SPADSRPScaleFactor = 1;
+satFlyBy_Forward.AtmosDensityScaleFactor = 1;
+satFlyBy_Forward.ExtendedMassPropertiesModel = 'None';
+satFlyBy_Forward.NAIFId = -10008001;
+satFlyBy_Forward.NAIFIdReferenceFrame = -9008001;
+satFlyBy_Forward.OrbitColor = Green;
+satFlyBy_Forward.TargetColor = LightGray;
+satFlyBy_Forward.OrbitErrorCovariance = [ 1e+70 0 0 0 0 0 ; 0 1e+70 0 0 0 0 ; 0 0 1e+70 0 0 0 ; 0 0 0 1e+70 0 0 ; 0 0 0 0 1e+70 0 ; 0 0 0 0 0 1e+70 ];
+satFlyBy_Forward.CdSigma = 1e+70;
+satFlyBy_Forward.CrSigma = 1e+70;
+satFlyBy_Forward.Id = 'SatId';
+satFlyBy_Forward.Attitude = CoordinateSystemFixed;
+satFlyBy_Forward.SPADSRPInterpolationMethod = Bilinear;
+satFlyBy_Forward.SPADSRPScaleFactorSigma = 1e+70;
+satFlyBy_Forward.SPADDragInterpolationMethod = Bilinear;
+satFlyBy_Forward.SPADDragScaleFactorSigma = 1e+70;
+satFlyBy_Forward.AtmosDensityScaleFactorSigma = 1e+70;
+satFlyBy_Forward.ModelFile = 'aura.3ds';
+satFlyBy_Forward.ModelOffsetX = 0;
+satFlyBy_Forward.ModelOffsetY = 0;
+satFlyBy_Forward.ModelOffsetZ = 0;
+satFlyBy_Forward.ModelRotationX = 0;
+satFlyBy_Forward.ModelRotationY = 0;
+satFlyBy_Forward.ModelRotationZ = 0;
+satFlyBy_Forward.ModelScale = 1;
+satFlyBy_Forward.AttitudeDisplayStateType = 'Quaternion';
+satFlyBy_Forward.AttitudeRateDisplayStateType = 'AngularVelocity';
+satFlyBy_Forward.AttitudeCoordinateSystem = EarthMJ2000Eq;
+satFlyBy_Forward.EulerAngleSequence = '321';
+
+%  Flyby control point
+Create Spacecraft satFlyBy_Backward;
+satFlyBy_Backward.DateFormat = TAIModJulian;
+satFlyBy_Backward.Epoch = '21545';
+satFlyBy_Backward.CoordinateSystem = MoonMJ2000Eq;
+satFlyBy_Backward.DisplayStateType = Cartesian;
+satFlyBy_Backward.X = 298687.676146519;
+satFlyBy_Backward.Y = 266738.2657072406;
+satFlyBy_Backward.Z = 77412.17892771779;
+satFlyBy_Backward.VX = -0.6435900196947146;
+satFlyBy_Backward.VY = 8.016034988895781;
+satFlyBy_Backward.VZ = 1.301310784907214;
+satFlyBy_Backward.DryMass = 850;
+satFlyBy_Backward.Cd = 2.2;
+satFlyBy_Backward.Cr = 1.8;
+satFlyBy_Backward.DragArea = 15;
+satFlyBy_Backward.SRPArea = 1;
+satFlyBy_Backward.SPADDragScaleFactor = 1;
+satFlyBy_Backward.SPADSRPScaleFactor = 1;
+satFlyBy_Backward.AtmosDensityScaleFactor = 1;
+satFlyBy_Backward.ExtendedMassPropertiesModel = 'None';
+satFlyBy_Backward.NAIFId = -10009001;
+satFlyBy_Backward.NAIFIdReferenceFrame = -9009001;
+satFlyBy_Backward.OrbitColor = Yellow;
+satFlyBy_Backward.TargetColor = DarkGray;
+satFlyBy_Backward.OrbitErrorCovariance = [ 1e+70 0 0 0 0 0 ; 0 1e+70 0 0 0 0 ; 0 0 1e+70 0 0 0 ; 0 0 0 1e+70 0 0 ; 0 0 0 0 1e+70 0 ; 0 0 0 0 0 1e+70 ];
+satFlyBy_Backward.CdSigma = 1e+70;
+satFlyBy_Backward.CrSigma = 1e+70;
+satFlyBy_Backward.Id = 'SatId';
+satFlyBy_Backward.Attitude = CoordinateSystemFixed;
+satFlyBy_Backward.SPADSRPInterpolationMethod = Bilinear;
+satFlyBy_Backward.SPADSRPScaleFactorSigma = 1e+70;
+satFlyBy_Backward.SPADDragInterpolationMethod = Bilinear;
+satFlyBy_Backward.SPADDragScaleFactorSigma = 1e+70;
+satFlyBy_Backward.AtmosDensityScaleFactorSigma = 1e+70;
+satFlyBy_Backward.ModelFile = 'aura.3ds';
+satFlyBy_Backward.ModelOffsetX = 0;
+satFlyBy_Backward.ModelOffsetY = 0;
+satFlyBy_Backward.ModelOffsetZ = 0;
+satFlyBy_Backward.ModelRotationX = 0;
+satFlyBy_Backward.ModelRotationY = 0;
+satFlyBy_Backward.ModelRotationZ = 0;
+satFlyBy_Backward.ModelScale = 1;
+satFlyBy_Backward.AttitudeDisplayStateType = 'Quaternion';
+satFlyBy_Backward.AttitudeRateDisplayStateType = 'AngularVelocity';
+satFlyBy_Backward.AttitudeCoordinateSystem = EarthMJ2000Eq;
+satFlyBy_Backward.EulerAngleSequence = '321';
+
+% MOI control point
+Create Spacecraft satMOI_Backward;
+satMOI_Backward.DateFormat = TAIModJulian;
+satMOI_Backward.Epoch = '21545';
+satMOI_Backward.CoordinateSystem = EarthMJ2000Eq;
+satMOI_Backward.DisplayStateType = Cartesian;
+satMOI_Backward.X = 7100;
+satMOI_Backward.Y = 0;
+satMOI_Backward.Z = 1300;
+satMOI_Backward.VX = 0;
+satMOI_Backward.VY = 7.35;
+satMOI_Backward.VZ = 1;
+satMOI_Backward.DryMass = 850;
+satMOI_Backward.Cd = 2.2;
+satMOI_Backward.Cr = 1.8;
+satMOI_Backward.DragArea = 15;
+satMOI_Backward.SRPArea = 1;
+satMOI_Backward.SPADDragScaleFactor = 1;
+satMOI_Backward.SPADSRPScaleFactor = 1;
+satMOI_Backward.AtmosDensityScaleFactor = 1;
+satMOI_Backward.ExtendedMassPropertiesModel = 'None';
+satMOI_Backward.NAIFId = -10010001;
+satMOI_Backward.NAIFIdReferenceFrame = -9010001;
+satMOI_Backward.OrbitColor = Blue;
+satMOI_Backward.TargetColor = DimGray;
+satMOI_Backward.OrbitErrorCovariance = [ 1e+70 0 0 0 0 0 ; 0 1e+70 0 0 0 0 ; 0 0 1e+70 0 0 0 ; 0 0 0 1e+70 0 0 ; 0 0 0 0 1e+70 0 ; 0 0 0 0 0 1e+70 ];
+satMOI_Backward.CdSigma = 1e+70;
+satMOI_Backward.CrSigma = 1e+70;
+satMOI_Backward.Id = 'SatId';
+satMOI_Backward.Attitude = CoordinateSystemFixed;
+satMOI_Backward.SPADSRPInterpolationMethod = Bilinear;
+satMOI_Backward.SPADSRPScaleFactorSigma = 1e+70;
+satMOI_Backward.SPADDragInterpolationMethod = Bilinear;
+satMOI_Backward.SPADDragScaleFactorSigma = 1e+70;
+satMOI_Backward.AtmosDensityScaleFactorSigma = 1e+70;
+satMOI_Backward.ModelFile = 'aura.3ds';
+satMOI_Backward.ModelOffsetX = 0;
+satMOI_Backward.ModelOffsetY = 0;
+satMOI_Backward.ModelOffsetZ = 0;
+satMOI_Backward.ModelRotationX = 0;
+satMOI_Backward.ModelRotationY = 0;
+satMOI_Backward.ModelRotationZ = 0;
+satMOI_Backward.ModelScale = 1;
+satMOI_Backward.AttitudeDisplayStateType = 'Quaternion';
+satMOI_Backward.AttitudeRateDisplayStateType = 'AngularVelocity';
+satMOI_Backward.AttitudeCoordinateSystem = EarthMJ2000Eq;
+satMOI_Backward.EulerAngleSequence = '321';
+
+% MOI control point
+Create Spacecraft satMOI_Forward;
+satMOI_Forward.DateFormat = TAIModJulian;
+satMOI_Forward.Epoch = '21545';
+satMOI_Forward.CoordinateSystem = EarthMJ2000Eq;
+satMOI_Forward.DisplayStateType = Cartesian;
+satMOI_Forward.X = 7100;
+satMOI_Forward.Y = 0;
+satMOI_Forward.Z = 1300;
+satMOI_Forward.VX = 0;
+satMOI_Forward.VY = 7.35;
+satMOI_Forward.VZ = 1;
+satMOI_Forward.DryMass = 850;
+satMOI_Forward.Cd = 2.2;
+satMOI_Forward.Cr = 1.8;
+satMOI_Forward.DragArea = 15;
+satMOI_Forward.SRPArea = 1;
+satMOI_Forward.SPADDragScaleFactor = 1;
+satMOI_Forward.SPADSRPScaleFactor = 1;
+satMOI_Forward.AtmosDensityScaleFactor = 1;
+satMOI_Forward.ExtendedMassPropertiesModel = 'None';
+satMOI_Forward.NAIFId = -10011001;
+satMOI_Forward.NAIFIdReferenceFrame = -9011001;
+satMOI_Forward.OrbitColor = Pink;
+satMOI_Forward.TargetColor = DarkSlateGray;
+satMOI_Forward.OrbitErrorCovariance = [ 1e+70 0 0 0 0 0 ; 0 1e+70 0 0 0 0 ; 0 0 1e+70 0 0 0 ; 0 0 0 1e+70 0 0 ; 0 0 0 0 1e+70 0 ; 0 0 0 0 0 1e+70 ];
+satMOI_Forward.CdSigma = 1e+70;
+satMOI_Forward.CrSigma = 1e+70;
+satMOI_Forward.Id = 'SatId';
+satMOI_Forward.Attitude = CoordinateSystemFixed;
+satMOI_Forward.SPADSRPInterpolationMethod = Bilinear;
+satMOI_Forward.SPADSRPScaleFactorSigma = 1e+70;
+satMOI_Forward.SPADDragInterpolationMethod = Bilinear;
+satMOI_Forward.SPADDragScaleFactorSigma = 1e+70;
+satMOI_Forward.AtmosDensityScaleFactorSigma = 1e+70;
+satMOI_Forward.ModelFile = 'aura.3ds';
+satMOI_Forward.ModelOffsetX = 0;
+satMOI_Forward.ModelOffsetY = 0;
+satMOI_Forward.ModelOffsetZ = 0;
+satMOI_Forward.ModelRotationX = 0;
+satMOI_Forward.ModelRotationY = 0;
+satMOI_Forward.ModelRotationZ = 0;
+satMOI_Forward.ModelScale = 1;
+satMOI_Forward.AttitudeDisplayStateType = 'Quaternion';
+satMOI_Forward.AttitudeRateDisplayStateType = 'AngularVelocity';
+satMOI_Forward.AttitudeCoordinateSystem = EarthMJ2000Eq;
+satMOI_Forward.EulerAngleSequence = '321';
+
+Create ForceModel NearEarthForceModel;
+NearEarthForceModel.CentralBody = Earth;
+NearEarthForceModel.PrimaryBodies = {Earth};
+NearEarthForceModel.PointMasses = {Luna, Sun};
+NearEarthForceModel.Drag = None;
+NearEarthForceModel.SRP = On;
+NearEarthForceModel.RelativisticCorrection = Off;
+NearEarthForceModel.ErrorControl = RSSStep;
+NearEarthForceModel.GravityField.Earth.Degree = 8;
+NearEarthForceModel.GravityField.Earth.Order = 8;
+NearEarthForceModel.GravityField.Earth.StmLimit = 100;
+NearEarthForceModel.GravityField.Earth.PotentialFile = 'D:\soft\gmat-win-R2025a\GMAT_R2025a\data\gravity\earth\JGM2.cof';
+NearEarthForceModel.GravityField.Earth.TideModel = 'None';
+NearEarthForceModel.SRP.Flux = 1367;
+NearEarthForceModel.SRP.SRPModel = Spherical;
+NearEarthForceModel.SRP.Nominal_Sun = 149597870.691;
+
+Create ForceModel NearMoonForceModel;
+NearMoonForceModel.CentralBody = Luna;
+NearMoonForceModel.PointMasses = {Luna, Earth, Sun};
+NearMoonForceModel.Drag = None;
+NearMoonForceModel.SRP = On;
+NearMoonForceModel.RelativisticCorrection = Off;
+NearMoonForceModel.ErrorControl = RSSStep;
+NearMoonForceModel.SRP.Flux = 1367;
+NearMoonForceModel.SRP.SRPModel = Spherical;
+NearMoonForceModel.SRP.Nominal_Sun = 149597870.691;
+
+Create Propagator NearEarthProp;
+NearEarthProp.FM = NearEarthForceModel;
+NearEarthProp.Type = PrinceDormand78;
+NearEarthProp.InitialStepSize = 60;
+NearEarthProp.Accuracy = 9.999999999999999e-12;
+NearEarthProp.MinStep = 0;
+NearEarthProp.MaxStep = 86400;
+NearEarthProp.MaxStepAttempts = 50;
+NearEarthProp.StopIfAccuracyIsViolated = true;
+
+Create Propagator NearMoonProp;
+NearMoonProp.FM = NearMoonForceModel;
+NearMoonProp.Type = PrinceDormand78;
+NearMoonProp.InitialStepSize = 60;
+NearMoonProp.Accuracy = 9.999999999999999e-12;
+NearMoonProp.MinStep = 0;
+NearMoonProp.MaxStep = 86400;
+NearMoonProp.MaxStepAttempts = 50;
+NearMoonProp.StopIfAccuracyIsViolated = true;
+
+Create ImpulsiveBurn MOI;
+MOI.CoordinateSystem = Local;
+MOI.Origin = Earth;
+MOI.Axes = VNB;
+MOI.Element1 = 0;
+MOI.Element2 = 0;
+MOI.Element3 = 0;
+MOI.DecrementMass = false;
+MOI.Isp = 300;
+MOI.GravitationalAccel = 9.81;
+
+Create CoordinateSystem MoonMJ2000Eq;
+MoonMJ2000Eq.Origin = Luna;
+MoonMJ2000Eq.Axes = MJ2000Eq;
+
+Create VF13ad NLPOpt;
+NLPOpt.ShowProgress = true;
+NLPOpt.ReportStyle = Normal;
+NLPOpt.ReportFile = 'VF13adVF13ad1.data';
+NLPOpt.MaximumIterations = 200;
+NLPOpt.Tolerance = 0.0001;
+NLPOpt.CheckPhysicalTolerances = false;
+NLPOpt.UseCentralDifferences = false;
+NLPOpt.UseFeasibility = true;
+NLPOpt.FeasibilityTolerance = 0.1;
+NLPOpt.MaximumLineSearches = 20;
+
+Create OrbitView EarthView;
+EarthView.SolverIterations = All;
+EarthView.UpperLeft = [ 0.4952941176470588 0.009791921664626682 ];
+EarthView.Size = [ 0.48 0.5165238678090576 ];
+EarthView.RelativeZOrder = 128;
+EarthView.Maximized = false;
+EarthView.Add = {satTOI, satFlyBy_Forward, satFlyBy_Backward, satMOI_Backward, Earth, Luna, satMOI_Forward};
+EarthView.CoordinateSystem = EarthMJ2000Eq;
+EarthView.DrawObject = [ true true true true true ];
+EarthView.DataCollectFrequency = 1;
+EarthView.UpdatePlotFrequency = 50;
+EarthView.NumPointsToRedraw = 300;
+EarthView.ShowPlot = true;
+EarthView.MaxPlotPoints = 20000;
+EarthView.ShowLabels = true;
+EarthView.ViewPointReference = Earth;
+EarthView.ViewPointVector = [ 0 0 30000 ];
+EarthView.ViewDirection = Earth;
+EarthView.ViewScaleFactor = 35;
+EarthView.ViewUpCoordinateSystem = EarthMJ2000Eq;
+EarthView.ViewUpAxis = X;
+EarthView.EclipticPlane = Off;
+EarthView.XYPlane = On;
+EarthView.WireFrame = Off;
+EarthView.Axes = On;
+EarthView.Grid = Off;
+EarthView.SunLine = Off;
+EarthView.UseInitialView = On;
+EarthView.StarCount = 7000;
+EarthView.EnableStars = On;
+EarthView.EnableConstellations = On;
+
+Create XYPlot PositionError;
+PositionError.SolverIterations = All;
+PositionError.UpperLeft = [ 0.02294117647058824 0.4296205630354957 ];
+PositionError.Size = [ 0.4594117647058824 0.5226438188494492 ];
+PositionError.RelativeZOrder = 85;
+PositionError.Maximized = false;
+PositionError.XVariable = loopIdx;
+PositionError.YVariables = {errorPos1, errorPos2};
+PositionError.ShowGrid = true;
+PositionError.ShowPlot = true;
+
+Create XYPlot VelocityError;
+VelocityError.SolverIterations = All;
+VelocityError.UpperLeft = [ 0.02411764705882353 0.01101591187270502 ];
+VelocityError.Size = [ 0.4564705882352941 0.416156670746634 ];
+VelocityError.RelativeZOrder = 95;
+VelocityError.Maximized = false;
+VelocityError.XVariable = loopIdx;
+VelocityError.YVariables = {errorVel1, errorVel2};
+VelocityError.ShowGrid = true;
+VelocityError.ShowPlot = true;
+
+Create XYPlot OrbitDimErrors;
+OrbitDimErrors.SolverIterations = All;
+OrbitDimErrors.UpperLeft = [ 0.4952941176470588 0.5263157894736842 ];
+OrbitDimErrors.Size = [ 0.4817647058823529 0.4198286413708691 ];
+OrbitDimErrors.RelativeZOrder = 80;
+OrbitDimErrors.Maximized = false;
+OrbitDimErrors.XVariable = loopIdx;
+OrbitDimErrors.YVariables = {errorMOIRadApo, errorMOIRadPer};
+OrbitDimErrors.ShowGrid = true;
+OrbitDimErrors.ShowPlot = true;
+
+Create XYPlot IncError;
+IncError.SolverIterations = All;
+IncError.UpperLeft = [ 0.4947058823529412 0.01223990208078335 ];
+IncError.Size = [ 0.4794117647058824 0.5018359853121175 ];
+IncError.RelativeZOrder = 90;
+IncError.Maximized = false;
+IncError.XVariable = loopIdx;
+IncError.YVariables = {errorMOIInclination};
+IncError.ShowGrid = true;
+IncError.ShowPlot = true;
+
+Create ReportFile debugData;
+debugData.SolverIterations = Current;
+debugData.UpperLeft = [ 0 0 ];
+debugData.Size = [ 0 0 ];
+debugData.RelativeZOrder = 0;
+debugData.Maximized = false;
+debugData.Filename = 'debugData.txt';
+debugData.Precision = 16;
+debugData.WriteHeaders = false;
+debugData.LeftJustify = On;
+debugData.ZeroFill = Off;
+debugData.FixedWidth = true;
+debugData.Delimiter = ' ';
+debugData.ColumnWidth = 20;
+debugData.WriteReport = false;
+debugData.AppendToExistingFile = false;
+
+%  Variables for defining constraint values
+Create Variable conTOIPeriapsis conMOIPeriapsis conTOIInclination conLunarPeriapsis conMOIApoapsis conMOIInclination launchRdotV finalPeriapsisValue errorPos1 errorVel1;
+Create Variable errorPos2 errorVel2 errorMOIRadApo errorMOIRadPer errorMOIInclination patchTwoElapsedDays patchOneEpoch patchTwoEpoch refEpoch toiEpoch;
+Create Variable flybyEpoch moiEpoch patchOneElapsedDays deltaTimeFlyBy earthRadius earthMu launchEnergy launchVehicleDeltaV toiDeltaV launchCircularVelocity;
+Create Variable loopIdx Cost;
+
+BeginMissionSequence;
+
+%  Define initial guesses for optimization variables
+BeginScript 'Initial Guess Values'
+   toiEpoch = 27698.1612435;
+   flybyEpoch = 27703.7658714;
+   moiEpoch = 27723.305398;
+   satTOI.X = -6659.70273964;
+   satTOI.Y = -229.327053112;
+   satTOI.Z = -168.396030559;
+   satTOI.VX = 0.26826479315;
+   satTOI.VY = -9.54041067213;
+   satTOI.VZ = 5.17141415746;
+   satFlyBy_Forward.X = 869.478955662;
+   satFlyBy_Forward.Y = -6287.76679557;
+   satFlyBy_Forward.Z = -3598.47087228;
+   satFlyBy_Forward.VX = 1.14619150302;
+   satFlyBy_Forward.VY = -0.73648611256;
+   satFlyBy_Forward.VZ = -0.624051812914;
+   satMOI_Backward.X = -53544.9703742;
+   satMOI_Backward.Y = -68231.6310266;
+   satMOI_Backward.Z = -1272.76362793;
+   satMOI_Backward.VX = 2.051823425;
+   satMOI_Backward.VY = -1.91406286218;
+   satMOI_Backward.VZ = -0.280408526046;
+   MOI.Element1 = -0.0687322937282;
+EndScript;
+
+%  Define constants and initialization
+BeginScript 'Constants and Init'
+   earthRadius = 6378.1363;
+   conTOIPeriapsis = 6378 + 285;
+   conTOIInclination = 28.5;
+   conLunarPeriapsis = 8000;
+   conMOIApoapsis = 60 * earthRadius;
+   conMOIInclination = 10;
+   conMOIPeriapsis = 15 * earthRadius;
+   patchOneElapsedDays = 1;
+   patchTwoElapsedDays = 13;
+   refEpoch = toiEpoch;
+   loopIdx = 0;
+EndScript;
+
+%  Optimization loop
+Optimize 'Optimize Flyby' NLPOpt {SolveMode = Solve, ExitMode = DiscardAndContinue, ShowProgressWindow = true};
+   % increment iteration counter for plotting
+   loopIdx = loopIdx + 1;
+   
+   %  Vary the epochs 
+   Vary NLPOpt(toiEpoch = toiEpoch, {Perturbation = 0.0001, MaxStep = 0.5, AdditiveScaleFactor = 0.0, MultiplicativeScaleFactor = 1.0});
+   Vary NLPOpt(flybyEpoch = flybyEpoch, {Perturbation = 0.0001, MaxStep = 0.5, AdditiveScaleFactor = 0.0, MultiplicativeScaleFactor = 1.0});
+   Vary NLPOpt(moiEpoch = moiEpoch, {Perturbation = 0.0001, MaxStep = 0.5, AdditiveScaleFactor = 0.0, MultiplicativeScaleFactor = 1.0});
+   
+   %  Configure epochs and spacecraft
+   satTOI.Epoch.TAIModJulian = toiEpoch;
+   satMOI_Backward.Epoch.TAIModJulian = moiEpoch;
+   satFlyBy_Forward.Epoch.TAIModJulian = flybyEpoch;
+   patchOneEpoch = refEpoch + patchOneElapsedDays;
+   patchTwoEpoch = refEpoch + patchTwoElapsedDays;
+   
+   %  Vary the states and delta V
+   Vary NLPOpt(satTOI.X = satTOI.X, {Perturbation = 1e-5, MaxStep = 100, AdditiveScaleFactor = 0.0, MultiplicativeScaleFactor = 1.0});
+   Vary NLPOpt(satTOI.Y = satTOI.Y, {Perturbation = 1e-6, MaxStep = 100, AdditiveScaleFactor = 0.0, MultiplicativeScaleFactor = 1.0});
+   Vary NLPOpt(satTOI.Z = satTOI.Z, {Perturbation = 1e-5, MaxStep = 100, AdditiveScaleFactor = 0.0, MultiplicativeScaleFactor = 1.0});
+   Vary NLPOpt(satTOI.VX = satTOI.VX, {Perturbation = 1e-5, MaxStep = 0.05, AdditiveScaleFactor = 0.0, MultiplicativeScaleFactor = 1.0});
+   Vary NLPOpt(satTOI.VY = satTOI.VY, {Perturbation = 1e-6, MaxStep = 0.05, AdditiveScaleFactor = 0.0, MultiplicativeScaleFactor = 1.0});
+   Vary NLPOpt(satTOI.VZ = satTOI.VZ, {Perturbation = 1e-6, MaxStep = 0.05, AdditiveScaleFactor = 0.0, MultiplicativeScaleFactor = 1.0});
+   Vary NLPOpt(satFlyBy_Forward.X = satFlyBy_Forward.MoonMJ2000Eq.X, {Perturbation = 1e-5, MaxStep = 100, AdditiveScaleFactor = 0.0, MultiplicativeScaleFactor = 1.0});
+   Vary NLPOpt(satFlyBy_Forward.Y = satFlyBy_Forward.MoonMJ2000Eq.Y, {Perturbation = 1e-5, MaxStep = 100, AdditiveScaleFactor = 0.0, MultiplicativeScaleFactor = 1.0});
+   Vary NLPOpt(satFlyBy_Forward.Z = satFlyBy_Forward.MoonMJ2000Eq.Z, {Perturbation = 1e-5, MaxStep = 100, AdditiveScaleFactor = 0.0, MultiplicativeScaleFactor = 1.0});
+   Vary NLPOpt(satFlyBy_Forward.VX = satFlyBy_Forward.MoonMJ2000Eq.VX, {Perturbation = 1e-5, MaxStep = 0.1, AdditiveScaleFactor = 0.0, MultiplicativeScaleFactor = 1.0});
+   Vary NLPOpt(satFlyBy_Forward.VY = satFlyBy_Forward.MoonMJ2000Eq.VY, {Perturbation = 1e-5, MaxStep = 0.1, AdditiveScaleFactor = 0.0, MultiplicativeScaleFactor = 1.0});
+   Vary NLPOpt(satFlyBy_Forward.VZ = satFlyBy_Forward.MoonMJ2000Eq.VZ, {Perturbation = 1e-5, MaxStep = 0.1, AdditiveScaleFactor = 0.0, MultiplicativeScaleFactor = 1.0});
+   Vary NLPOpt(satMOI_Backward.X = satMOI_Backward.X, {Perturbation = 1e-6, MaxStep = 40000, AdditiveScaleFactor = 0.0, MultiplicativeScaleFactor = 1.0});
+   Vary NLPOpt(satMOI_Backward.Y = satMOI_Backward.Y, {Perturbation = 1e-6, MaxStep = 40000, AdditiveScaleFactor = 0.0, MultiplicativeScaleFactor = 1.0});
+   Vary NLPOpt(satMOI_Backward.Z = satMOI_Backward.Z, {Perturbation = 1e-6, MaxStep = 40000, AdditiveScaleFactor = 0.0, MultiplicativeScaleFactor = 1.0});
+   Vary NLPOpt(satMOI_Backward.VX = satMOI_Backward.VX, {Perturbation = 1e-5, MaxStep = 0.1, AdditiveScaleFactor = 0.0, MultiplicativeScaleFactor = 1.0});
+   Vary NLPOpt(satMOI_Backward.VY = satMOI_Backward.VY, {Perturbation = 1e-5, MaxStep = 0.1, AdditiveScaleFactor = 0.0, MultiplicativeScaleFactor = 1.0});
+   Vary NLPOpt(satMOI_Backward.VZ = satMOI_Backward.VZ, {Perturbation = 1e-5, MaxStep = 0.1, AdditiveScaleFactor = 0.0, MultiplicativeScaleFactor = 1.0});
+   Vary NLPOpt(MOI.Element1 = MOI.Element1, {Perturbation = 1e-4, MaxStep = 0.005, AdditiveScaleFactor = 0.0, MultiplicativeScaleFactor = 1.0});
+   
+   %  Initialize spacecraft copies and compute patch timing
+   satFlyBy_Backward = satFlyBy_Forward;
+   satMOI_Forward = satMOI_Backward;
+   deltaTimeFlyBy = flybyEpoch - toiEpoch;
+   
+   %  Apply constraints on initial states
+   NonlinearConstraint NLPOpt(satTOI.INC=conTOIInclination);
+   NonlinearConstraint NLPOpt(satTOI.RadPer=conTOIPeriapsis);
+   NonlinearConstraint NLPOpt(satMOI_Backward.RadPer=conMOIPeriapsis);
+   launchRdotV = (satTOI.X*satTOI.VX + satTOI.Y*satTOI.VY + satTOI.Z*satTOI.VZ)/1000;
+   NonlinearConstraint NLPOpt(launchRdotV=0);
+   
+   %  Propagate the segments
+   Propagate NearEarthProp(satTOI) {satTOI.TAIModJulian = patchOneEpoch, StopTolerance = 1e-05};
+   PenUp EarthView;
+   Propagate BackProp NearMoonProp(satFlyBy_Backward);
+   PenDown EarthView;
+   Propagate BackProp NearMoonProp(satFlyBy_Backward) {satFlyBy_Backward.TAIModJulian = patchOneEpoch, StopTolerance = 1e-05};
+   
+   PenUp EarthView;
+   Propagate NearMoonProp(satFlyBy_Forward);
+   PenDown EarthView;
+   Propagate NearMoonProp(satFlyBy_Forward) {satFlyBy_Forward.Earth.Apoapsis, StopTolerance = 1e-05};
+   Report debugData satFlyBy_Forward.RMAG;
+   
+   If satFlyBy_Forward.TAIModJulian > patchTwoEpoch
+      Propagate BackProp NearMoonProp(satFlyBy_Forward) {satFlyBy_Forward.TAIModJulian = patchTwoEpoch, StopTolerance = 1e-05};
+   Else
+      Propagate NearMoonProp(satFlyBy_Forward) {satFlyBy_Forward.TAIModJulian = patchTwoEpoch, StopTolerance = 1e-05};
+   EndIf;
+   
+   PenUp EarthView;
+   Propagate BackProp NearMoonProp(satMOI_Backward);
+   PenDown EarthView;
+   Propagate BackProp NearMoonProp(satMOI_Backward) {satMOI_Backward.TAIModJulian = patchTwoEpoch, StopTolerance = 1e-05};
+   
+   %  Compute constraint errors for plots
+   errorPos1 = sqrt((satTOI.X - satFlyBy_Backward.X)^2 + (satTOI.Y - satFlyBy_Backward.Y)^2 + (satTOI.Z - satFlyBy_Backward.Z)^2);
+   errorVel1 = sqrt((satTOI.VX - satFlyBy_Backward.VX)^2 + (satTOI.VY - satFlyBy_Backward.VY)^2 + (satTOI.VZ - satFlyBy_Backward.VZ)^2);
+   errorPos2 = sqrt((satMOI_Backward.X - satFlyBy_Forward.X)^2 + (satMOI_Backward.Y - satFlyBy_Forward.Y)^2 + (satMOI_Backward.Z - satFlyBy_Forward.Z)^2);
+   errorVel2 = sqrt((satMOI_Backward.VX - satFlyBy_Forward.VX)^2 + (satMOI_Backward.VY - satFlyBy_Forward.VY)^2 + (satMOI_Backward.VZ - satFlyBy_Forward.VZ)^2);
+   
+   %  Apply the collocation constraints on final states
+   NonlinearConstraint NLPOpt(satTOI.EarthMJ2000Eq.X=satFlyBy_Backward.EarthMJ2000Eq.X);
+   NonlinearConstraint NLPOpt(satTOI.EarthMJ2000Eq.Y=satFlyBy_Backward.EarthMJ2000Eq.Y);
+   NonlinearConstraint NLPOpt(satTOI.EarthMJ2000Eq.Z=satFlyBy_Backward.EarthMJ2000Eq.Z);
+   NonlinearConstraint NLPOpt(satTOI.EarthMJ2000Eq.VX=satFlyBy_Backward.EarthMJ2000Eq.VX);
+   NonlinearConstraint NLPOpt(satTOI.EarthMJ2000Eq.VY=satFlyBy_Backward.EarthMJ2000Eq.VY);
+   NonlinearConstraint NLPOpt(satTOI.EarthMJ2000Eq.VZ=satFlyBy_Backward.EarthMJ2000Eq.VZ);
+   NonlinearConstraint NLPOpt(satMOI_Backward.EarthMJ2000Eq.X=satFlyBy_Forward.EarthMJ2000Eq.X);
+   NonlinearConstraint NLPOpt(satMOI_Backward.EarthMJ2000Eq.Y=satFlyBy_Forward.EarthMJ2000Eq.Y);
+   NonlinearConstraint NLPOpt(satMOI_Backward.EarthMJ2000Eq.Z=satFlyBy_Forward.EarthMJ2000Eq.Z);
+   NonlinearConstraint NLPOpt(satMOI_Backward.EarthMJ2000Eq.VX=satFlyBy_Forward.EarthMJ2000Eq.VX);
+   NonlinearConstraint NLPOpt(satMOI_Backward.EarthMJ2000Eq.VY=satFlyBy_Forward.EarthMJ2000Eq.VY);
+   NonlinearConstraint NLPOpt(satMOI_Backward.EarthMJ2000Eq.VZ=satFlyBy_Forward.EarthMJ2000Eq.VZ);
+   
+   %  Apply mission orbit constraints/others on segments after propagation
+   errorMOIInclination = satMOI_Forward.INC - conMOIInclination;
+   NonlinearConstraint NLPOpt(satMOI_Forward.EarthMJ2000Eq.INC=conMOIInclination);
+   
+   PenUp EarthView;
+   Propagate NearEarthProp(satMOI_Forward);
+   PenDown EarthView;
+   If satMOI_Forward.Earth.TA > 180
+      Propagate NearEarthProp(satMOI_Forward) {satMOI_Forward.Earth.Periapsis};
+   Else
+      Propagate BackProp NearEarthProp(satMOI_Forward) {satMOI_Forward.Earth.Periapsis};
+   EndIf;
+   Maneuver MOI(satMOI_Forward);
+   Propagate NearEarthProp(satMOI_Forward) {satMOI_Forward.Earth.Apoapsis};
+   NonlinearConstraint NLPOpt(satMOI_Forward.RadApo=conMOIApoapsis);
+   errorMOIRadApo = satMOI_Forward.Earth.RadApo - conMOIApoapsis;
+   
+   %  Define and minimize the cost function
+   Cost = sqrt(MOI.Element1^2 + MOI.Element2^2 + MOI.Element3^2);
+   Minimize NLPOpt(Cost);
+   
+   %  Report stuff at the end of each iteration
+   Report debugData MOI.Element1;
+   Report debugData satMOI_Forward.RMAG conMOIApoapsis conMOIInclination;
+
+EndOptimize;  % For optimizer NLPOpt
